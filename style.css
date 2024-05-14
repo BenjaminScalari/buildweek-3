@@ -1,52 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 .container-fluid {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 /* STILE E MODIFICHE PER LA SIDEBAR DI SINISTRA */
 
 .sidebar-left {
-    border: 1px solid rgb(29, 0, 160);
-    background-color: rgb(0, 0, 0);
-    padding: 5px 0 0 30px;
-    color: rgb(100, 100, 100);
-    font-size: larger;
+  border: 1px solid rgb(29, 0, 160);
+  background-color: rgb(0, 0, 0);
+  padding: 5px 0 0 30px;
+  color: rgb(100, 100, 100);
+  font-size: larger;
+  height: 100vh;
 }
 
 .logo-spotify {
-    width: 90%;
-    height: 70px;
-    background-image: url("../buildweek-3/assets/Spotify-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 90%;
+  height: 70px;
+  background-image: url("../buildweek-3/assets/Spotify-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .list-group-items {
-    list-style: none;
-    padding-bottom: 12px;
+  list-style: none;
+  padding-bottom: 12px;
 }
 
 .playlist {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .list-group-items span {
-    padding-left: 5px;
+  padding-left: 5px;
+}
+
+/* STILE E MODIFICHE PER LA SIDEBAR DI DESTRA */
+
+.side-offcanvas {
+  background-color: rgb(23, 23, 23);
+  color: white;
+}
+
+.side-offcanvas .btn-close {
+  color: white !important;
+  margin-right: 30px; /* bottone di chiusura della side */
+}
+
+.offcanvas-header i {
+  margin-left: 10rem; /* Do un po di margine all'icona per distanziarla dall'h5 */
+}
+
+.card-attivita-amici {
+  color: rgb(
+    151,
+    151,
+    151
+  ); /* colore per il testo delle card della side-right */
 }
 
 /* INSERITO PER PROVA */
 .sidebar-right {
-    background-color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0);
-    color: rgb(100, 100, 100);
+  background-color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0);
+  color: rgb(100, 100, 100);
 }
 
 .container {
-    background-color: rgb(23, 23, 23);
-    border: 1px solid rgb(23, 23, 23);
+  background-color: rgb(23, 23, 23);
+  border: 1px solid rgb(23, 23, 23);
+}
+
+/* CONTENITORE PER LA CARD HERO */
+
+#card-hero-home {
+    border: 1px solid yellow;
+    height: 300px;
 }

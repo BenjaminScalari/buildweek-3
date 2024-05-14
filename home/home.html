@@ -16,48 +16,99 @@
     <div class="container-fluid">
         <div class="row">
 
-    <!-- BLOCCO 1 SIDEBAR DI SINISTRA -->
+            <!-- BLOCCO 1 SIDEBAR DI SINISTRA -->
             <div class="sidebar-left col-3 d-flex flex-column justify-content-start">
-               <div class="logo-spotify"></div> 
-               <ul class="list-group">
-               <li class="list-group-items"> <i class="bi bi-house-door-fill"></i> <span>Home</span></li> 
-               <li class="list-group-items"> <i class="bi bi-search"></i> <span>Cerca</span></li> 
-               <li class="list-group-items mb-4"> <i class="bi bi-collection-fill"></i> <span>La tua libreria</span></li> 
-               </ul>
-               <ul class="list-group playlist">
-                <li class="list-group-items"> <i class="bi bi-plus"></i> <span>Crea playlist</span></li> 
-                <li class="list-group-items"> <i class="bi bi-suit-heart-fill"></i><span>Brani che ti piacciono</span></li> 
-                <li class="list-group-items mb-3"> <i class="bi bi-bookmark-fill"></i> <span>I tuoi episodi</span></li> 
+                <div class="logo-spotify"></div>
+                <ul class="list-group">
+                    <li class="list-group-items"> <i class="bi bi-house-door-fill"></i> <span>Home</span></li>
+                    <li class="list-group-items"> <i class="bi bi-search"></i> <span>Cerca</span></li>
+                    <li class="list-group-items mb-4"> <i class="bi bi-collection-fill"></i> <span>La tua
+                            libreria</span></li>
+                </ul>
+                <ul class="list-group playlist">
+                    <li class="list-group-items"> <i class="bi bi-plus"></i> <span>Crea playlist</span></li>
+                    <li class="list-group-items"> <i class="bi bi-suit-heart-fill"></i><span>Brani che ti
+                            piacciono</span></li>
+                    <li class="list-group-items mb-3"> <i class="bi bi-bookmark-fill"></i> <span>I tuoi episodi</span>
+                    </li>
                 </ul>
             </div>
-    <!-- BLOCCO 2 CONTAINER CENTRALE -->
+            <!-- BLOCCO 2 CONTAINER CENTRALE -->
             <div class="container col-7">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque, neque, consequatur odio nobis
-                velit ad facilis aperiam voluptate possimus laborum similique alias temporibus natus. Impedit deleniti
-                quam magnam maiores!
+                <div id="card-hero-home"></div>
             </div>
 
-    <!-- BLOCCO 3 SIDEBAR DI DESTRA -->        
+            <!-- BLOCCO 3 SIDEBAR DI DESTRA -->
 
             <div class="sidebar-right col-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nihil itaque dolor accusamus autem atque,
-                voluptates laudantium quas maiores ipsa saepe tenetur hic, veritatis at placeat optio iusto, nisi nemo
-                voluptatum minima illo! Nobis, quos aliquam nulla veritatis eaque perspiciatis, culpa corrupti cum qui
-                suscipit vel velit quae corporis id quasi doloribus nam quibusdam blanditiis a ducimus debitis. Iste
-                amet esse officia quis nam non eius rem sapiente, sed vitae, enim labore consectetur distinctio, a
-                debitis magnam magni saepe soluta inventore fuga fugit? Quis, minus molestiae. Asperiores reprehenderit
-                adipisci unde praesentium numquam harum ratione repudiandae! Enim ab ipsam minus laboriosam unde nam
-                obcaecati deserunt illum vero modi, omnis temporibus iste reprehenderit eveniet beatae perferendis.
-                Voluptatibus hic placeat nihil facilis doloribus eaque laudantium quas aperiam suscipit reiciendis.
-                Beatae rem eaque nobis natus, labore corporis ex! Ratione optio cupiditate adipisci ipsum et illo quasi
-                id eveniet quibusdam, aperiam ullam sint unde? Modi vitae nam quod tempore enim aut explicabo dicta
-                assumenda ex? Obcaecati tenetur quae sint quam ullam minus. Doloremque totam quidem natus quasi
-                necessitatibus repellat adipisci. Molestiae, eveniet delectus? Numquam, eligendi! Officia cumque sed
-                eaque totam, quaerat aut rem iusto tenetur optio quia itaque velit! Aliquam saepe nesciunt dolorum
-                fugiat fuga!
+                <div class="d-flex justify-content-end mt-2">
+                    <i class="bi bi-dash px-4"></i>
+                    <i class="bi bi-copy"></i>
+                    <i class="bi bi-x-lg px-4 "></i>
+                </div>
+
+                <!-- SIDEBAR A SCOMPARSA CON IL BOTTONE -->
+
+                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><i class="bi bi-person fs-3 d-flex justify-content-end m-3"></i>
+                </div> <!-- icona che apre la side -->
+
+                <div class="offcanvas offcanvas-end mt-5 side-offcanvas" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Attività amici</h5>
+                        <i class="bi bi-person fs-4"></i>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <!-- CARD SIDEBAR  -->
+                        <div class="card-attivita-amici d-flex mt-4 mb-5">
+                            <div>
+                                <img class="rounded-5" src="https://picsum.photos/40/40" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-3">
+                                <h5>Charlie Hookham</h5>
+                                <span class="fs-6">In Camera <i class="bi bi-dot"></i> Youmi Zouma</span>
+                                <span><i class="bi bi-pause-circle"></i> EP III</span>
+                            </div>
+                            <div>
+                                <span class="ms-5">4 ore</span>
+                            </div>
+                        </div>
+                        <div class="card-attivita-amici d-flex mt-4 mb-5">
+                            <div>
+                                <img class="rounded-5" src="https://picsum.photos/40/40" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-3">
+                                <h5>lightdark02</h5>
+                                <span class="fs-6">Aimed to Kill<i class="bi bi-dot"></i> Jade LeMac</span>
+                                <span><i class="bi bi-pause-circle"></i> Aimed to Kill</span>
+                            </div>
+                            <div>
+                                <span class="ms-5">8 ore</span>
+                            </div>
+                        </div>
+                        <div class="card-attivita-amici d-flex mt-4">
+                            <div>
+                                <img class="rounded-5" src="https://picsum.photos/40/40" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-2">
+                                <h5>Valeria Traverso</h5>
+                                <span class="fs-6">New Kings <i class="bi bi-dot"></i> Sleeping Wolf</span>
+                                <span><i class="bi bi-music-note-beamed"></i> Twint Badass Mood</span>
+                            </div>
+                            <div>
+                                <span class="ms-5">3 giorni</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
-</div>
     <script src="../home/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
