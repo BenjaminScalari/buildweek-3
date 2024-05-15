@@ -1,4 +1,5 @@
-const url = "https://striveschool-api.herokuapp.com/api/deezer/search?q=geolier/"
+const url = "https://striveschool-api.herokuapp.com/api/deezer/search?q=geolier/"; // url singolo artista
+const urlAlbum = "https://striveschool-api.herokuapp.com/api/deezer/album/ {id}"; //url album
 
 async function loadSongs() {
     const response = await fetch(url);
@@ -15,12 +16,13 @@ async function loadSongs() {
                 </div>
                 <div class="d-flex flex-column mx-3">
                     <span>ALBUM</span>
-                    <h3 id"song-title">${firstSong.title}</h3>
+                    <h2 class="song-title">${firstSong.title}</h2>
                     <span class="fs-6">${firstSong.artist.name}</span>
                     <span>Ascolta il tuo nuovo singolo di ${firstSong.artist.name}</span>
                     <div> 
                         <button class="button-play-home" type="button"> Play </button>
                         <button class="button-salva-home" type="button"> Salva </button>
+                        <i class="bi bi-three-dots"></i>
                     </div>
                 </div>
             </div>
@@ -32,3 +34,12 @@ async function loadSongs() {
 }
 
 loadSongs();
+
+async function loadAlbum() {
+    const response = await fetch(url);
+    const albums = await response.json();
+    console.log(albums);
+
+    const albumRandom = math.floor(Math.random() * albums.data.length);
+    
+}
