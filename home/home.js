@@ -43,3 +43,36 @@ async function loadAlbum() {
     const albumRandom = math.floor(Math.random() * albums.data.length);
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function showRtist(id) {
+    window.location.href = `../artist-page/artist.html?id=${id}`;
+}
